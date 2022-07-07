@@ -40,9 +40,6 @@
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
 
-    <!-- Linking JS -->
-    <script defer src="js/script.js"></script>
-
     <title>Mealo &mdash; Never cook again!</title>
   </head>
 
@@ -601,11 +598,11 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form" name="sign-up" netlify>
+              <form class="cta-form" name="sign-up" id="fr1" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
-                    id="full-name"
+                    id="tb1"
                     type="text"
                     placeholder="John Smith"
                     name="full-name"
@@ -616,7 +613,7 @@
                 <div>
                   <label for="email">Email address</label>
                   <input
-                    id="email"
+                    id="tb2"
                     type="email"
                     placeholder="me@example.com"
                     name="email"
@@ -624,19 +621,7 @@
                   />
                 </div>
 
-                <div>
-                  <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" name="select-where" required>
-                    <option value="">Please choose one option:</option>
-                    <option value="friends">Friends and family</option>
-                    <option value="youtube">YouTube video</option>
-                    <option value="podcast">Podcast</option>
-                    <option value="ad">Facebook ad</option>
-                    <option value="others">Others</option>
-                  </select>
-                </div>
-
-                <button class="btn btn--form">Sign up now</button>
+                <button class="btn btn--form" id="bt1">Mail us</button>
 
                 <!-- <input type="checkbox" />
                 <input type="number" /> -->
@@ -733,5 +718,9 @@
         </nav>
       </div>
     </footer>
+
+    <!-- Linking JS -->
+    <script defer src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
